@@ -1,0 +1,18 @@
+<!--logs.wxml-->
+<input type='text' placeholder-style='color:#666' placeholder='请输入内容' bindconfirm="fn" class='input' value="{{itemval}}"/>
+<div class="unfinished">
+  <h4>未完成的待办事项</h4>
+</div>
+<ul class="todo">
+  <li wx:for="{{list}}" bindtap="move" data-index="{{index}}" wx:if="{{!item.status}}" wx:for-item="item" wx:key="{{item}}">
+    {{item.details}}
+  </li>
+</ul>
+<div class="finished">
+  <h4>已完成事项</h4>
+</div>
+<ul class="todo done">
+  <li wx:for="{{list}}" bindtap="move" data-index="{{index}}" wx:if="{{item.status}}" wx:for-item="item" wx:key="{{item}}">
+    {{item.details}}
+  </li>
+</ul>

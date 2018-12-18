@@ -1,0 +1,41 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+.input{
+  background-color: #eee;
+  font-size: 14px;
+  padding: 5px 15px;
+  letter-spacing: 2px;
+  border-radius: 0 0 8px 8px;
+}
+.todo li{
+  color:orange;
+  background-color: #eee;
+  display: block;
+  margin: 5px 14px;
+  line-height: 22px;
+  text-indent: 15px;
+  font-size: 12px;
+  border-radius: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.unfinished h4,.finished h4{
+  display: block;
+  margin: 10px 0;
+  font-size: 18px;
+  padding-left: 15px;
+  color:red;
+}
+.finished h4{
+  color:#ababab;
+}
+.done li{
+  color:#ababab;
+}
